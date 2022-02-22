@@ -27,7 +27,7 @@ services:
     tty: true
 
     ports:
-      - "9999:80"
+      - "9997:80"
       - "8143:443"
 
     volumes:
