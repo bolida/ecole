@@ -2,10 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TopicalityController;
 
-Route::get('/', function () {
-    return [
-        'success' => true,
-        'message' => 'Welcome to HERY API' 
-    ];
-});
+Route::apiResource('topicality', TopicalityController::class);
